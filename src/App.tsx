@@ -5,6 +5,7 @@ import { Nav } from "./Components/Nav";
 import { Info } from "./Components/Info";
 import { About } from "./Components/About";
 import { Services } from "./Components/Services";
+import { Trailer } from "./Components/trailer";
 
 function App() {
   const lenis = new Lenis();
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <>
+      <Trailer />
       <Nav />
       <Hero />
       <Info />

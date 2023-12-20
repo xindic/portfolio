@@ -18,7 +18,7 @@
   transition: opacity 0.5s ease;
 }
 
-body:hove > #trailer {
+body:hover > #trailer {
   opacity: 1;
 }
 
