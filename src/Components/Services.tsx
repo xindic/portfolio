@@ -2,11 +2,13 @@ export const Services = () => {
   return (
     <div
       id="white"
-      className="h-screen w-auto bg-[#FAFAF9] flex flex-col items-top justify-center"
+      className="h-screen w-auto bg-[#FAFAF9] flex flex-col items-top justify-center space-y-10"
     >
-      <h3 className="text-[#8C8C73] font-generalsans-semibold text-[7rem] text-center">
-        Services
-      </h3>
+      <div className="overflow-hidden h-[14vh] flex justify-center items-center">
+        <h3 className="text-[#8C8C73] font-generalsans-semibold text-[7rem] text-center text-scroll">
+          Services
+        </h3>
+      </div>
       <div
         id="white"
         className="h-screen w-auto bg-[#FAFAF9] flex flex-row items-top justify-center"

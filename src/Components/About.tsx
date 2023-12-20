@@ -2,11 +2,13 @@ export const About = () => {
   return (
     <div
       id="white"
-      className="h-screen w-auto bg-[#FAFAF9] flex flex-col items-top justify-center"
+      className="h-screen w-auto bg-[#FAFAF9] flex flex-col items-top justify-center space-y-10"
     >
-      <h3 className="text-[#8C8C73] font-generalsans-semibold text-center text-[5rem]">
-        ABOUT ME
-      </h3>
+      <div className="overflow-hidden h-[14vh] flex justify-center items-center">
+        <h3 className="text-[#8C8C73] font-generalsans-semibold text-center text-scroll text-[6rem]">
+          ABOUT ME
+        </h3>
+      </div>
       <div className="h-screen w-auto flex flex-row justify-center items-top">
         <div className="bg-blue-300 h-[80vh] w-[60vh] rounded-xl overflow-hidden">
           <img

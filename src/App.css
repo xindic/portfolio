@@ -3,33 +3,98 @@
   color: transparent;
 }
 
+::selection {
+  background-color: #d1d1c7;
+}
+
 #trailer {
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
+  background-color: #8b8b72;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
   position: fixed;
 
   left: 0px;
   top: 0px;
-  z-index: 100;
+  z-index: 1000;
 
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 
-body:hover > #trailer {
+.loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafaf9;
+  z-index: 100;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #8b8b72;
+  border-top-color: #fafaf9;
+  border-radius: 50%;
+
+  animation: loading 1s ease infinite;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+body:hover #trailer {
   opacity: 1;
 }
 
 .heroimageAnimation {
-  animation: imageLoad 1s cubic-bezier(0.73, 0.38, 0.46, 0.94);
-  animation-fill-mode: forwards;
+  animation: imageLoad 1s cubic-bezier(0.73, 0.38, 0.46, 0.94) forwards;
 }
 
 .divAnimation {
-  animation: divLoad 1s cubic-bezier(0.73, 0.38, 0.46, 0.94);
-  animation-fill-mode: forwards;
+  animation: divLoad 1s cubic-bezier(0.73, 0.38, 0.46, 0.94) forwards;
+}
+
+.text-reveal {
+  opacity: 0;
+}
+
+.text-scroll {
+  opacity: 0;
+}
+
+.textAnimation {
+  animation: textSlide 0.8s ease forwards;
+}
+
+@keyframes textSlide {
+  from {
+    margin-top: 20vh;
+    opacity: 100;
+  }
+
+  to {
+    margin-top: 0vh;
+    opacity: 100;
+  }
 }
 
 @keyframes divLoad {

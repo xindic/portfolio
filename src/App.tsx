@@ -5,7 +5,11 @@ import { Nav } from "./Components/Nav";
 import { Info } from "./Components/Info";
 import { About } from "./Components/About";
 import { Services } from "./Components/Services";
-import { Trailer } from "./Components/trailer";
+import { Trailer } from "./Components/Trailer";
+import { Scroll } from "./Components/Scroll";
+import { Projects } from "./Components/Projects";
+import { Load } from "./Components/Load";
+import { Reveal } from "./Components/Reveal";
 
 function App() {
   const lenis = new Lenis();
@@ -20,11 +24,15 @@ function App() {
   return (
     <>
       <Trailer />
+      <Load />
+      <Scroll />
+      <Reveal />
       <Nav />
       <Hero />
       <Info />
       <About />
       <Services />
+      <Projects />
     </>
   );
 }

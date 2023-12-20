@@ -4,45 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const Info = () => {
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#info",
-      start: "-50% center",
-      end: "200% center",
-      scrub: false,
-      markers: false,
-      toggleActions: "play reverse play reverse",
-    },
-  });
-
-  tl.to(
-    "#white",
-    {
-      backgroundColor: "#0E0E0C",
-      duration: 0.5,
-    },
-    0
-  );
-
-  tl.to(
-    "#black",
-    {
-      color: "#FAFAF9",
-      duration: 0.5,
-    },
-    0
-  );
-
-  tl.to(
-    "#blackButton",
-    {
-      backgroundColor: "#FAFAF9",
-      color: "#0E0E0C",
-      duration: 0.5,
-    },
-    0
-  );
-
   return (
     <div
       id="white"
