@@ -66,16 +66,13 @@ export const Services = () => {
             Javascript
           </h4>
           <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
-            HTML
-          </h4>{" "}
-          <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
-            CSS
-          </h4>{" "}
-          <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
             ReactJS
           </h4>
           <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
             TailwindCSS
+          </h4>
+          <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
+            C
           </h4>
           <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
             C#
