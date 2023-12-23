@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# MY PORTFOLIO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Video Demo: <https://www.youtube.com/watch?v=KzSfTicdJsY>
 
-Currently, two official plugins are available:
+## NOTE: THE DESIGN FOR THE WEBSITE WAS INSPIRED BY AN ALREADY EXISTING WEBSITE
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Introduction:
 
-## Expanding the ESLint configuration
+Welcome to my CS50x final project! This project is a culmination of the skills and knowledge I've gained throughout the course. I chose to create a personal portfolio to showcase the projects I've worked on and demonstrate my proficiency in web development.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Project Overview:
 
-- Configure the top-level `parserOptions` property like this:
+The portfolio is a dynamic website built using ReactJS for the frontend, Tailwind CSS for styling, and NodeJS for the backend. The primary goal of this project is to provide a clean and organized presentation of my current projects. The development process took over two weeks, during which I dedicated time to learning React, Tailwind CSS, and NodeJS from scratch.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Technologies Used:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**ReactJS**: A JavaScript library for building user interfaces. I utilized React to create a dynamic and responsive frontend for my portfolio.
+
+**Tailwind CSS**: A utility-first CSS framework that enabled me to rapidly design and style the components of my portfolio. The project's aesthetic appeal owes much to Tailwind's flexibility and simplicity.
+
+**NodeJS**: A JavaScript runtime built on Chrome's V8 JavaScript engine. I employed NodeJS to build the backend and handle server-side functionalities such as the contact form.
+
+### Features:
+
+**Project Showcase**: Display a collection of my current projects with details on each project.
+
+**Responsive Design**: Ensure a seamless user experience across various devices and screen sizes.
+
+**Contact Form**: Allow visitors to send me messages or inquiries through a contact form.
+
+### Challenges:
+
+**Learning Curve**: The project posed challenges as I had to learn React, Tailwind CSS, and NodeJS from scratch. Balancing the intricacies of each technology required careful attention and perseverance.
+
+**Responsive Design**: Achieving a consistent and attractive design across different devices required thorough testing and adjustments.
+
+### Acknowledgements:
+
+I would like to express my gratitude to the CS50x team for providing a comprehensive learning experience. Additionally, I appreciate the supportive community and fellow learners who provided valuable insights and assistance during the development process.
