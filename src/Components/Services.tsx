@@ -2,7 +2,7 @@ export const Services = () => {
   return (
     <div
       id="white"
-      className="h-screen w-auto bg-[#FAFAF9] flex flex-col items-top justify-center space-y-10"
+      className="h-[85vh] w-auto bg-[#FAFAF9] flex flex-col items-top justify-center space-y-10"
     >
       <div className="overflow-hidden h-[14vh] flex justify-center items-center">
         <h3 className="text-[#8C8C73] font-generalsans-semibold text-[7rem] text-center text-scroll">
@@ -13,45 +13,37 @@ export const Services = () => {
         id="white"
         className="h-screen w-auto bg-[#FAFAF9] flex flex-row items-top justify-center"
       >
-        <div className="h-[60vh] w-[60vh] flex flex-col mx-[20vh]">
+        <div className="h-[60vh] w-[30vw] flex flex-col mx-[6vw]">
           <h4
             id="black"
-            className="text-[#000000] font-generalsans-semibold text-[2.5rem] text-left"
+            className="text-[#000000] font-generalsans-semibold text-[2.5rem] mt-5 text-left"
           >
-            PLACEHOLDER
+            my expertise.
           </h4>
           <p
             id="black"
-            className="text-[#000000] font-generalsans-medium text-[1rem] text-left"
+            className="text-[#303030] font-generalsans-medium text-[1rem] text-left"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Most of my focus is in the game development industry, however I also
+            have experience in web development. With each of my services, my
+            goal is to deliver an impactful experience for everyone.
           </p>
           <h4
             id="black"
-            className="text-[#000000] font-generalsans-semibold text-[2.5rem] text-left mt-[5rem]"
+            className="text-[#000000] font-generalsans-semibold text-[2.5rem] text-left mt-[3rem]"
           >
-            PLACEHOLDER
+            my toolbox.
           </h4>
           <p
             id="black"
-            className="text-[#000000] font-generalsans-medium text-[1rem] text-left"
+            className="text-[#303030] font-generalsans-medium text-[1rem] text-left"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            These are my go to tech stack to make any projects happen. I am
+            always eager of learning more about my current stack, and new
+            technologies that could expand my horizons.
           </p>
         </div>
-        <div className="h-[60vh] w-[80vh] mx-[10vh] flex flex-col items-start space-y-[-1rem]">
+        <div className="h-[60vh] w-[40vw] flex flex-col items-start space-y-[-1rem]">
           <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
             Game Development
           </h4>
@@ -63,15 +55,6 @@ export const Services = () => {
           </h4>{" "}
           <br></br>
           <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
-            Javascript
-          </h4>
-          <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
-            ReactJS
-          </h4>
-          <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
-            TailwindCSS
-          </h4>
-          <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
             C
           </h4>
           <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
@@ -79,6 +62,15 @@ export const Services = () => {
           </h4>
           <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
             Lua
+          </h4>
+          <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
+            ReactJS
+          </h4>
+          <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
+            Javascript
+          </h4>
+          <h4 className="text-[#AEAE9D] font-generalsans-bold text-[3rem] text-center">
+            TailwindCSS
           </h4>
         </div>
       </div>

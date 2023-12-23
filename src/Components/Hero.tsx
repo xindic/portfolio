@@ -22,7 +22,7 @@ export const Hero = () => {
     >
       <div
         id="divLoad"
-        className="bg-[#DDDAD2] absolute h-[40rem] w-[60vh] z-0 rounded-xl overflow-hidden div aspect-auto"
+        className="bg-[#DDDAD2] absolute h-[40rem] w-[30vw] z-0 rounded-xl overflow-hidden div aspect-auto"
       >
         <img
           id="imgLoad"
