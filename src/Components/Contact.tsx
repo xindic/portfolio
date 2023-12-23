@@ -1,4 +1,33 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 export const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail: React.FormEventHandler<HTMLFormElement> = (e) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_0yg7n58",
+          "template_q5glnyk",
+          form.current,
+          "7kurCr80Bfm-20HkT"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    } else {
+      console.error("Form element is null");
+    }
+  };
+
   return (
     <div
       id="white"
@@ -23,26 +52,25 @@ export const Contact = () => {
           >
             Let's bring it to life.
           </h4>
-          <form action="/contact" method="post">
+          <form ref={form} onSubmit={sendEmail}>
             <input
               required
               type="text"
-              id="name"
               name="name"
+              autoComplete="off"
               className="w-full border-b border-gray-400 bg-transparent mt-10 focus:outline-none focus:ring-0"
               placeholder="Enter Name"
             ></input>
             <input
               required
               type="email"
-              id="email"
               name="email"
+              autoComplete="off"
               className="w-full border-b border-gray-400 bg-transparent mt-10 focus:outline-none focus:ring-0"
               placeholder="Enter Email"
             ></input>
             <textarea
               required
-              id="message"
               name="message"
               rows={5}
               className="w-full border-b border-gray-400 bg-transparent mt-10 focus:outline-none focus:ring-0"
@@ -51,6 +79,7 @@ export const Contact = () => {
             <button
               id="blackButton"
               type="submit"
+              value="Send"
               className="bg-[#262626] ml-auto mt-5 w-[8rem] h-[2.5rem] rounded-[2rem] font-generalsans-medium text-[#FAFAF9] text-[0.9rem]"
             >
               Send message
@@ -78,21 +107,29 @@ export const Contact = () => {
           </h4>
           <div className="flex justify-center items-center">
             <i className="fa-brands fa-discord mx-2"></i>
-            <button
-              id="black"
-              className="font-generalsans-medium text-[1rem] text-left"
+            <a
+              target="_blank"
+              href="https://discord.com/users/489824470941433856"
             >
-              Discord
-            </button>
+              {" "}
+              <button
+                id="black"
+                className="font-generalsans-medium text-[1rem] text-left"
+              >
+                Discord
+              </button>
+            </a>
           </div>
           <div className="flex justify-center items-center">
             <i className="fa-brands fa-github mx-2"></i>
-            <button
-              id="black"
-              className="font-generalsans-medium text-[1rem] text-left"
-            >
-              Github
-            </button>
+            <a target="_blank" href="https://github.com/xindic">
+              <button
+                id="black"
+                className="font-generalsans-medium text-[1rem] text-left"
+              >
+                Github
+              </button>
+            </a>
           </div>
           <div className="flex justify-center items-center">
             <svg
@@ -107,13 +144,17 @@ export const Contact = () => {
                 d="M5.164 0L.16 18.928L18.836 24L23.84 5.072Zm8.747 15.354l-5.219-1.417l1.399-5.29l5.22 1.418z"
               />
             </svg>
-
-            <button
-              id="black"
-              className="font-generalsans-medium text-[1rem] text-left"
+            <a
+              target="_blank"
+              href="https://www.roblox.com/users/1310048777/profile"
             >
-              Roblox
-            </button>
+              <button
+                id="black"
+                className="font-generalsans-medium text-[1rem] text-left"
+              >
+                Roblox
+              </button>
+            </a>
           </div>
         </div>
       </div>

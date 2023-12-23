@@ -8,7 +8,6 @@ export const Reveal = () => {
       const revealpoint = 150;
 
       if (revealtop < windowheight - revealpoint) {
-        console.log("ADDED");
         reveals[i].classList.add("textAnimation");
       }
     }
