@@ -1,6 +1,5 @@
 import "./App.css";
 import Lenis from "@studio-freight/lenis";
-import { Trailer } from "./Components/Trailer";
 import { Load } from "./Components/Load";
 import { Scroll } from "./Components/Scroll";
 import { Reveal } from "./Components/Reveal";
@@ -24,7 +23,6 @@ function App() {
 
   return (
     <>
-      <Trailer />
       <Load />
       <Scroll />
       <Reveal />
