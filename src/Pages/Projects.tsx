@@ -8,7 +8,12 @@ const Projects = () => {
       <div className="w-[85vw] h-[85vh] mx-[7.5vw] Scrollable">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full sm:mb-4 gap-y-10">
           <Template
-            Name="Arm Wrestling Simulator"
+            Name="MMA Legends"
+            Link="https://www.roblox.com/games/16346453667/RELEASE-MMA-Legends"
+            Image="https://tr.rbxcdn.com/021c6da1da1068688a520bdf617cc7bb/768/432/Image/Webp"
+          />
+          <Template
+            Name="Bench Press Simulator"
             Link="https://www.roblox.com/games/14985614364/Weight-Lifting-Simulator"
             Image="https://tr.rbxcdn.com/1f20694c727ba2bab87fd663d2c622df/768/432/Image/Png"
           />
