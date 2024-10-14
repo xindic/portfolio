@@ -1,4 +1,4 @@
-:script>
+<script>
 	import { onMount } from "svelte";
 	import Seperator from "$lib/components/ui/separator/separator.svelte";
 
