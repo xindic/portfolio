@@ -2,5 +2,5 @@
 	<small>
 		&copy; {new Date().getFullYear()} xindic. All rights reserved.
 	</small>
-	<p>Built with Svelte, Typescript, Tailwind CSS)</p>
+	<p>Built with Svelte, Typescript, Tailwind CSS and lots of love!</p>
 </footer>

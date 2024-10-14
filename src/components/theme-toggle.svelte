@@ -26,7 +26,7 @@
 	on:click={toggleTheme}
 	variant="outline"
 	size="icon"
-	class="fixed z-[1000] shadow-lg border-2 top-2 sm:top-6 sm:h-10 sm:w-10 h-8 w-8 left-[92%]"
+	class="fixed z-[1000] shadow-lg border-2 top-[1.6rem] h-10 w-10 left-[90%] sm:left-[92%]"
 >
 	<Sun
 		class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"

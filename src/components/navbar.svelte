@@ -5,17 +5,22 @@
 	import { observeSections } from "$lib/observe-sections";
 	import * as ToggleGroup from "$lib/components/ui/toggle-group/index";
 
+	let size: "lg" | "default" = "lg";
 	let activeSection: string;
 	let observer: IntersectionObserver | null = null;
-
-	onMount(() => {
-		observer = observeSections();
-	});
 
 	const unsubscribeActiveSection = activeSectionStore.subscribe((store) => {
 		console.log(store.activeSection);
 		activeSection = store.activeSection;
 	});
+
+	const updateSize = () => {
+		if (window.innerWidth < 640) { 
+			size = 'default';
+		} else {
+			size = 'lg';
+		}
+	};
 
 	onDestroy(() => {
 		unsubscribeActiveSection();
@@ -25,26 +30,35 @@
 		}
 	});
 
+	onMount(() => {
+		observer = observeSections();
+		updateSize()
+		window.addEventListener('resize', updateSize);
+		return () => window.removeEventListener('resize', updateSize);
+	});
+
+
 	const handleSectionChange = (section: string) => {
 		const targetSection = document.getElementById(section);
 		if (targetSection) {
 			targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
 		}
 	};
+
 </script>
 
-<div class="fixed z-[999] top-0 sm:top-6 w-full flex justify-center">
+<div class="fixed z-[999] top-6 w-full flex justify-center">
 	<ToggleGroup.Root
 		type="single"
 		value={activeSection}
-		size="lg"
+		size={size}
 		onValueChange={(value) => {
 			if (value) handleSectionChange(value);
 		}}
-		class="w-full transition-colors shadow-lg bg-white dark:bg-black border-2 sm:w-auto sm:rounded-xl rounded-none"
+		class="w-[74%] sm:w-auto transition-colors shadow-lg bg-white dark:bg-black border-2 rounded-xl"
 	>
 		{#each links as link (link.hash)}
-			<ToggleGroup.Item value={link.name}>
+			<ToggleGroup.Item value={link.name} class="sm:w-auto w-[19%]">
 				{link.name}
 			</ToggleGroup.Item>
 		{/each}

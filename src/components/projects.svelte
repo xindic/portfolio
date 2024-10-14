@@ -48,7 +48,7 @@
 			onSelectedChange={changeProjectType}
 		>
 			<Select.Trigger
-				class="transition-colors w-[20%] sm:w-40 mr-[12%] shadow-lg"
+				class="transition-colors w-28 sm:w-40 mr-[12%] shadow-lg"
 			>
 				<Select.Value class="text-sm" />
 			</Select.Trigger>
@@ -66,7 +66,7 @@
 		opts={{
 			align: "start",
 		}}
-		class="w-full max-w-sm md:max-w-full md:w-[80%] lg:w-[80%]"
+		class="w-full max-w-sm sm:w-[60%] md:max-w-full md:w-[80%] lg:w-[80%]"
 	>
 		<Carousel.Content>
 			{#each currentProjectType.value === "Scripting" ? scriptingProjects : visualEffectProjects as project (project.name)}
