@@ -13,9 +13,10 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
 			strict: false,
+			fallback: '404.html'
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production'?'/portfolio.github.io':''
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		}
 	}
 };
