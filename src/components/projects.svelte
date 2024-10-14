@@ -38,18 +38,16 @@
 	id="Projects"
 	class="mb-10 sm:mb-28 sm:mt-14 w-full scroll-mt-28 text-center leading-8 flex flex-col items-center"
 >
-	<div class="w-full absolute flex justify-center items-center">
+	<div class="w-full sm:absolute flex justify-center items-center">
 		<h2 class="text-3xl font-semibold capitalize text-center">Projects</h2>
 	</div>
-	<div class="w-full flex justify-end mb-24">
+	<div class="w-full flex justify-center items-center mt-6 sm:mt-0 sm:justify-end mb-24">
 		<Select.Root
 			items={ProjectTypes}
 			selected={currentProjectType}
 			onSelectedChange={changeProjectType}
 		>
-			<Select.Trigger
-				class="transition-colors w-28 sm:w-40 mr-[12%] shadow-lg"
-			>
+			<Select.Trigger class="transition-colors w-[50%] sm:w-40 sm:mr-[12%] shadow-lg">
 				<Select.Value class="text-sm" />
 			</Select.Trigger>
 			<Select.Content>
@@ -64,9 +62,9 @@
 
 	<Carousel.Root
 		opts={{
-			align: "start",
+			align: "center",
 		}}
-		class="w-full max-w-sm sm:w-[60%] md:max-w-full md:w-[80%] lg:w-[80%]"
+		class="w-[60%] max-w-sm sm:w-full md:max-w-full md:w-[80%] lg:w-[80%]"
 	>
 		<Carousel.Content>
 			{#each currentProjectType.value === "Scripting" ? scriptingProjects : visualEffectProjects as project (project.name)}
