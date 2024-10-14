@@ -32,7 +32,6 @@
 	function handleCardClick(link: string) {
 		window.open(link, "_blank", "noopener,noreferrer");
 	}
-
 </script>
 
 <section
@@ -109,10 +108,7 @@
 									class="flex aspect-square items-center justify-center p-6"
 								>
 									<video controls class="w-full h-full">
-										<source
-											src={project.video}
-											type="video/mp4"
-										/>
+										<source src={project.video} type="video/mp4" />
 										Your browser does not support the video tag.
 									</video>
 								</Card.Content>
@@ -126,4 +122,3 @@
 		<Carousel.Next />
 	</Carousel.Root>
 </section>
-

@@ -14,10 +14,9 @@
 			name: "Developer Forum",
 			text: "@xindic",
 			icon: "simple-icons:robloxstudio",
-			link: "https://devforum.roblox.com/u/xindic/summary"
-		}
+			link: "https://devforum.roblox.com/u/xindic/summary",
+		},
 	];
-
 </script>
 
 <section

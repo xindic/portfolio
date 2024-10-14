@@ -2,18 +2,18 @@
 	import { onMount, onDestroy } from "svelte";
 	import { links } from "../lib/data";
 	import { activeSectionStore } from "../lib/active-section-store";
-	import { observeSections } from "$lib/observe-sections"
+	import { observeSections } from "$lib/observe-sections";
 	import * as ToggleGroup from "$lib/components/ui/toggle-group/index";
 
 	let activeSection: string;
-  let observer: IntersectionObserver | null = null;
+	let observer: IntersectionObserver | null = null;
 
-  onMount(() => {
-    observer = observeSections();
-  });
+	onMount(() => {
+		observer = observeSections();
+	});
 
 	const unsubscribeActiveSection = activeSectionStore.subscribe((store) => {
-		console.log(store.activeSection)
+		console.log(store.activeSection);
 		activeSection = store.activeSection;
 	});
 
@@ -21,7 +21,8 @@
 		unsubscribeActiveSection();
 
 		if (observer) {
-      observer.disconnect();    }
+			observer.disconnect();
+		}
 	});
 
 	const handleSectionChange = (section: string) => {
