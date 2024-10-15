@@ -10,8 +10,7 @@
 	<p class="mb-3 max-w-[80%] font-medium">
 		I'm a <span class="font-semibold">professional programmer</span> with over
 		<span class="font-semibold">2 years</span>
-		of experience. I'm very passionate about OSS projects and{" "}
-		<span class="font-semibold">maintaining a few myself</span>. I utilize{" "}
+		of experience. I utilize{" "}
 		<span class="font-semibold">industry standard</span> modern tools in my
 		workflow, such as <span class="font-semibold">Rojo and Git</span> to build
 		my{" "}
