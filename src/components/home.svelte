@@ -9,7 +9,7 @@
 	export let loadingStatus: any = undefined;
 
 	let avatar2 =
-		"https://cdn.discordapp.com/avatars/489824470941433856/4b6db5759da1030838a1582addfe420d.png?size=1024";
+		"https://images-ext-1.discordapp.net/external/yJokyv-p8JyYDVlWFR85EBYtvmr0VKunyRltVOESCfM/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/489824470941433856/5910da493da24b1c7e49629340fefbc5.png?format=webp&quality=lossless";
 
 	const handleSectionChange = (section: string) => {
 		const targetSection = document.getElementById(section);

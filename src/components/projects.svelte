@@ -12,7 +12,7 @@
 
 	const ProjectTypes = [
 		{ value: "Scripting", label: "Scripting" },
-		{ value: "Visual Effects", label: "Visual Effects" },
+		//{ value: "Visual Effects", label: "Visual Effects" },
 	];
 
 	let currentProjectType: projectType = {};
